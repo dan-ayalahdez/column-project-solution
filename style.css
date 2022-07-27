@@ -1,0 +1,189 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* General */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    position: relative;
+    background-color: white;
+}
+
+/* Main */
+
+.main-container{
+    display: grid;
+    grid-template-columns: 20em;
+}
+
+.first-container,
+.second-container,
+.third-container{
+    padding: 3em;
+}
+
+.main-container h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    color: white;
+}
+
+.main-container p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+.main-container a{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: white;
+    padding: 0.8em 1.8em;
+    border-radius: 1.5em;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: solid 1px white;
+    transition: 
+    background-color 0.5s,
+    color 0.5s;
+}
+
+.first-container{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.first-button{
+    color:hsl(31, 77%, 52%);
+}
+
+.first-button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.second-container{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.second-button{
+    color: hsl(184, 100%, 22%);
+}
+
+.second-button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.third-container{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.third-button{
+    color: hsl(179, 100%, 13%);
+}
+
+.third-button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+
+/* Footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position:absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
+
+
+/* Media Queries */
+
+/* Desktop */
+@media only screen and (min-width: 1281px){
+    body{
+        height: 100vh;
+    }
+
+    .main-container{
+        grid-template-columns: 20em 20em 20em;
+    }
+
+    .main-container h2{
+        font-size: 2.5em;
+    }
+
+
+    .main-container p{
+        font-size: 1em;
+        line-height: 1.6em;
+        margin-bottom: 5em;
+    }
+
+    .first-container,
+    .second-container,
+    .third-container{
+    padding: 4em;
+}
+
+    .first-container{
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+    }
+
+    .third-container{
+        border-bottom-left-radius: 0em;
+        border-top-right-radius: 0.5em;
+    }
+
+}
+
+    /* Tablet */
+@media only screen and (min-width: 768px) {
+    body{
+        height: 100vh;
+    }
+
+    .main-container{
+        grid-template-columns: 14em 14em 14em;
+    }
+
+    .main-container h2{
+        font-size: 2em;
+    }
+
+
+    .main-container p{
+        margin-bottom: 5em;
+    }
+
+    .first-container,
+    .second-container,
+    .third-container{
+    padding: 2em;
+}
+
+    .first-container{
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+    }
+
+    .third-container{
+        border-bottom-left-radius: 0em;
+        border-top-right-radius: 0.5em;
+    }
+
+}
+
